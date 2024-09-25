@@ -1,4 +1,8 @@
-# Binary Search
+# Binary Search and Merge Sort
+
+## Binary Search
+**Real life example:**  
+Searching for a word in the dictionary. I'll open up the dictionary down the middle or somewhere around there and think to myself, is the word I'm looking for in the left side or the right side? Then, I flip a random amount in the side that the word may be in and ask the question again. I keep repeating this until I hone in on the word, each time cutting the search area by around half.
 
 **Definitions:**  
 lst = list, elt = element, left = left index, right = right index
@@ -66,3 +70,14 @@ Therefore, in a **worst case** scenario, binary search will take K+1 where K = l
 **Examples:**  
 If we have a list of 10^9^ (one billion) elements, which is approx. 2^20^ elements, it will take roughly 21 steps to get the search item in the worst case scenario or it won't exist. 
 If we have a list of 10^12 (one trillion) elements, which is approx. 2^30^ elements. It will 
+
+## Merge Sort
+
+**Real life example:**  
+A library handles a LOT of books on a daily basis. In order to sort those books, they first divide up the books into much smaller stacks (a push cart), then the librarians may grab 3-4 books before thinking about how to organize those few and place them on the shelf. The library will then grab another few books and do the same, but this time considering the books that were already on the shelf. These shelves of books are then already categorized based on section, and each section is sorted by genre on the larger scale.
+
+**What is sorting?**  
+The goal of sorting is to rearrange a list into some order, either ascending or descending.
+
+**What is merge sort?**  
+Merge sort takes an array and recursively breaks it down into smaller sub-arrays, eventually reaching arrays of size 1 or 2. At this point, sorting these small arrays is straightforward, establishing what is known as the base case. The algorithm then merges these sorted sub-arrays back together, comparing their values to ensure that elements are placed in the correct order. This process continues until the entire array is reconstructed in sorted order.
